@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: white;" styleClass="main" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.ychakir.rz.launchermaker.Controllers.Controller">
+   <children>
+      <GridPane layoutX="33.0" layoutY="100.0" prefHeight="233.0" prefWidth="470.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="141.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="366.0" minWidth="10.0" prefWidth="309.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="btnAbout" text="About" GridPane.rowIndex="5" />
+            <JFXButton fx:id="btnUrl" text="Launcher url:" textAlignment="CENTER" />
+            <JFXTextField fx:id="txtUrl" labelFloat="true" promptText="Exemple: http://localhost/launcher/launcher.html" GridPane.columnIndex="1" />
+            <JFXButton fx:id="btnSFrame" text="Default SFrame name:" GridPane.rowIndex="1" />
+            <JFXTextField fx:id="txtSFrame" labelFloat="true" promptText="Exemple: SFrame.exe" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="btnIP" text="Default auth IP:" textAlignment="CENTER" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="txtIP" labelFloat="true" promptText="Exemple: 127.0.0.1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="btnPort" text="Default auth port:" textAlignment="CENTER" GridPane.rowIndex="3" />
+            <JFXTextField fx:id="txtPort" labelFloat="true" promptText="Exemple: 4500" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <JFXButton fx:id="btnIcon" text="Icon:" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="txtIcon" labelFloat="true" promptText="Exemple: C:\Users\Yassine\Pictures\icon.ico" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <JFXButton fx:id="btnMake" text="Make" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
