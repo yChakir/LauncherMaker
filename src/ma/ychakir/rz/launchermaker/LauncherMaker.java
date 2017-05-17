@@ -22,7 +22,7 @@ public class LauncherMaker extends Application {
         Font.loadFont(getClass().getResource("Views/fonts/fontawesome-webfont.ttf").toExternalForm(), 12);
         Font.loadFont(getClass().getResource("Views/fonts/Comfortaa-Regular.ttf").toExternalForm(), 12);
         Parent root = FXMLLoader.load(getClass().getResource("Views/main.fxml"));
-        primaryStage.setTitle("Pack Manager");
+        primaryStage.setTitle("Launcher Maker");
         primaryStage.setScene(new Scene(root, 500, 350));
         primaryStage.show();
     }
