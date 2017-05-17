@@ -133,11 +133,11 @@ public class Controller implements Initializable {
                             "    <cp>libs/log4j-1.2.17.jar</cp>\n" +
                             "  </classPath>\n" +
                             "  <jre>\n" +
-                            "    <path></path>\n" +
+                            "    <path>jre</path>\n" +
                             "    <bundledJre64Bit>false</bundledJre64Bit>\n" +
                             "    <bundledJreAsFallback>false</bundledJreAsFallback>\n" +
-                            "    <minVersion>1.8.0</minVersion>\n" +
-                            "    <maxVersion>9.9.9</maxVersion>\n" +
+                            "    <minVersion></minVersion>\n" +
+                            "    <maxVersion></maxVersion>\n" +
                             "    <jdkPreference>preferJre</jdkPreference>\n" +
                             "    <runtimeBits>32/64</runtimeBits>\n" +
                             "  </jre>\n" +
@@ -176,6 +176,7 @@ public class Controller implements Initializable {
                 //build executable launcher
                 if (build(launcher)) {
                     FileUtils.copyDirectory(new File("./launcher/libs"), new File(launcher.getParent() + "\\libs"));
+                    FileUtils.copyDirectory(new File("./jre"), new File(launcher.getParent() + "\\jre"));
                     DialogUtil.toast("Launcher created successfully.", 5000);
                 } else {
                     throw new Exception();
